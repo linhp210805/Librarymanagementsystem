@@ -179,7 +179,8 @@ def book_list_view(request):
                 book.nam_xuat_ban = year
                 book.so_luong = quantity
                 book.save()
-                messages.success(request, f"Đã cập nhật thông tin sách '{title}'.")
+                messages.success(request, 'Cập nhật thông tin sách thành công.')
+
 
         return redirect("book_list")
 
